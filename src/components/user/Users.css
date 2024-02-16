@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user {
+    margin: 40px;
+    padding: 10px; 
+    border: solid 2px;
+    border-color: #000000;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+}
+
