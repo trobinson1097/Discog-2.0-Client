@@ -3,13 +3,16 @@ import { useNavigate } from "react-router-dom"
 import { getAllGenres } from "../genre/GenreManager"
 import { createDiscog } from "./DiscogManager"
 
+// ---- Airbnb Code Sample ----
 
+
+// This component is responsible for rendering the form for users to create a new Discography 
 export const DiscogForm = () => {
-//   const [categories, setCategories] = useState([])
   const [genres, setGenres] = useState([])
-  const [discog, setGenre] = useState({})
+  const [discog, setDiscog] = useState({})
   const [genresForDiscog, setGenresForDiscog] = useState([])
   let navigate = useNavigate()
+
 
   useEffect(() => {
     getAllGenres().then(genresData => setGenres(genresData))
@@ -27,25 +30,28 @@ export const DiscogForm = () => {
     setGenresForDiscog(genresCopy)
   }
 
+
   const handleSubmit = (evt) => {
     evt.preventDefault()
-
     const discogsData = {
       ...discog,
       genres: genresForDiscog
     }
-
     createDiscog(discogsData).then((discog) => {
       navigate(`/discogs/${discog.id}`)
     })
   }
 
+  // ---- Airbnb Code Sample ---
+
+
+
   const handleChange = (event) => {
     const newDiscog = { ...discog }
     newDiscog[event.target.name] = event.target.value
-    setGenre(newDiscog)
+    setDiscog(newDiscog)
   }
-  
+
 
   return (
     <section className="section">
