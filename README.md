@@ -11,7 +11,7 @@ note: This application is a passion project and my Final Capstone for Nashville 
 
 ### Why Discog 2.0?
 
-I have always had a passion for listening to and creating music so at the start of covid I began collecting cassettes. To keep track of the fast-growing collection I used 
+I have always had a passion for listening to and creating music and at the start of covid I began collecting cassettes. To keep track of the fast-growing collection I used 
 [Discogs](https://www.discogs.com/) . I was inspired by the largely known application and wanted to create one that would someday fix certain features I found hard to use as a
 collector. 
 This application is scalable and I look forward to continuing my work on it as I develop new skills and think of new and useful features.
